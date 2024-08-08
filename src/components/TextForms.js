@@ -22,7 +22,7 @@ export default function TextForms(props) {
       .trim()
       .split(/\s+/)
       .filter((word) => word.length > 0);
-    let wordCount = words.length;
+    let wordCount = words.length; 
     let characterCount = text.replace(/\s/g, "").length;
 
     setWordCount(wordCount);
@@ -137,7 +137,7 @@ export default function TextForms(props) {
         <button className="btn btn-success mx-2" onClick={clearText}>
           Clear Text
         </button>
-        <button className="btn btn-success mx-2" onClick={undoLastAction}>
+        <button className="btn btn-success mx-2" onClick={undoLastAction}> 
           Undo
         </button>
       </div>
